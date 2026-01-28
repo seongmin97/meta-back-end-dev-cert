@@ -34,6 +34,10 @@
 
 ## Introduction to HTML5 and CSS  
 
+- html tags
+  - `<head></head>`
+  - hyberlink: `<a href="location.html">Our location</a>`
+
 
 
 
