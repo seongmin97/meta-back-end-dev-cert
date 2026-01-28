@@ -32,7 +32,10 @@
 - RESTful apis: representational state transfer, is a set of principles that help build highly efficient API's. 
 - backend roles: database, cloud servers
 
-
 ## Introduction to HTML5 and CSS  
+
+
+
+
 
 ## UI Frameworks
