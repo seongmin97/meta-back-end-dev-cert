@@ -46,8 +46,8 @@
 - selecting and styling: css
   - selector
     - elements
-    - ID   #
-    - class.  .
+    - ID   `#`
+    - class  `.`
     - element with class selector
     - descendant selectors
     - child selector
@@ -62,3 +62,19 @@
 
 
 ## UI Frameworks
+
+- Responsive design is a set of three practices that allows a website to automatically change its visuals.
+  - Flexible grids
+  - Fluid images
+  - Media queries: Orientation, Display size, Aspect ratio
+- breakpoint
+  - fix grid
+  - fluid grid
+  - hybrid grid
+- **Bootstrap** is a collection of pre-written code chunks in CSS and JavaScript that allows you to create websites more quickly than if you had to create every bit of code from scratch.
+- 
+
+
+
+
+
