@@ -38,8 +38,24 @@
   - `<head></head>`
   - hyberlink: `<a href="location.html">Our location</a>`
 
+- form 
+- DOM
+  - document objects model. JS code can query and update it.
+- html elements: [ref](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements)
 
-
-
+- selecting and styling: css
+  - selector
+    - elements
+    - ID   #
+    - class.  .
+    - element with class selector
+    - descendant selectors
+    - child selector
+  - declaration block
+- Box model
+  - content
+  - padding
+  - border
+  - margin
 
 ## UI Frameworks
