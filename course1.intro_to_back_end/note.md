@@ -73,7 +73,21 @@
   - hybrid grid
 - **Bootstrap** is a collection of pre-written code chunks in CSS and JavaScript that allows you to create websites more quickly than if you had to create every bit of code from scratch.
   - document [ref](https://getbootstrap.com/docs/4.1/getting-started/introduction/?)
-- 
+- Static and Dynamic
+  - static: such as image and video.
+  - dynamic: generated when http requests is made.
+- Single page applicaiton: only one HTML page. It has two approaches to serving code and resources
+  - bundling, server retures and loads all necessary HTML, CSS and JS immeiately.
+  - lazy loading, return minimum resources needed to load the application
+- React: write less coe to create functionality
+  - React builds a representation of the browser Document Object Model or DOM in memory called the virtual DOM
+  - React check virtual DOM first, if a change is required, the browswer DOM is updated as needed.
+- Component hierarchy
+
+
+
+
+  
 
 
 
