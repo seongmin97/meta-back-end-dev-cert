@@ -70,3 +70,27 @@ apple = FruitFlavour()
 
 
 ## Modules, packages, libraries and tools
+- Advantages of using modules in python
+  - Reusability:
+  - Simplicity: Each module is designed for a specific purpose, which helps maintain simplicity and reduces interdependencies.
+- import
+- namespacing and scope
+  - scope: local, enclosed, global, built-in
+- reload()
+- packages: numpy, pandas, matplotlib ...
+- ML packages
+- web framework: Django, flask...
+- test
+  - test type: 
+    - unit testing, integration testing, system testing, and acceptance testing.
+    - Testing can also be categorized as white box (knowledge of code) and black box (no knowledge of internal workings).
+  - pytest
+    - `python3 -m pytest test_file.py`
+    - `py.test test_file.py`
+- test driven development
+  - Step 1: Write a test for a feature that fails.
+  - Step 2: Write the code to make the test pass.
+  - Step 3: Run the test, expecting it to fail initially.
+  - Step 4: Evaluate errors and refactor the code as needed.
+  - Step 5: Rerun the tests until all pass (green).
+
