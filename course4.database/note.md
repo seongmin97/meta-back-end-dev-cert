@@ -92,3 +92,28 @@ ORDER BY BillingCountry;
 
 
 ## Database design
+- Databse schema
+- Types of schema
+  - Entity relational model
+  - Physical schema
+- Table relation
+  - one-to-many relationship: student enroll many courses
+  - one-to-one relationship
+  - many-to-many relationship
+- Primary key
+  - composite primary key
+- Foreign key
+- Entity relationship diagrams
+- Database Normalization
+  - insert anomaly
+  - update anomaly
+  - deletion anomaly
+- 1NF
+  - The data atomicity rule means you can only have one single instance value of the column attribute in any table cell.
+- 2NF
+  - must avoid partial dependency relationships between data
+  - Partial dependency refers to tables with a composite primary key
+    - e.g. composite primary key (patientID, vaccineID), two non-primary attributes, names refer to patientID, vaccines name refer to vaccineID
+- 3NF
+  - it must have no transitive dependency. 
+  - This means that any non-key attribute in the surgery table may not be functionally dependent on another non-key attribute in the same table.
