@@ -69,5 +69,26 @@ WHERE id = 3;
 
 
 ## SQL operators
+- SQL Arithmetic Operators
+- Comparision Operators
+- Order By: ASC, DESC
+  - by default, the ordering happens in ascending order. 
+  - Ordering by multiple columns
+```sql
+SELECT * 
+FROM invoices 
+ORDER BY BillingCity ASC, InvoiceDate DESC;
+
+select CustomerID, FirstName, LastName, City, State, Country from Customer WHERE Country = "Brazil" ORDER BY FirstName;
+```
+- WHERE cluase
+- DISTINCT clause
+
+```sql
+SELECT DISTINCT BillingCountry  
+FROM invoices 
+ORDER BY BillingCountry; 
+```
+
 
 ## Database design
