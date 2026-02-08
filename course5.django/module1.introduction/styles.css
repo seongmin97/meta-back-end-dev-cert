@@ -1,0 +1,15 @@
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+button,
+textarea {
+  width: 100%; /* Makes the input take up the full width of its parent */
+  padding: 8px; /* Adds some space inside the input */
+  margin-bottom: 10px; /* Adds space below the input */
+  border: 1px solid #ccc; /* A light gray border */
+  border-radius: 4px; /* Slightly rounded corners */
+}
