@@ -21,8 +21,21 @@
     - You place Template web pages in the templates folder with the .html extension.
 
 
-
 ## Views
+- Views functions need to be mapped to URL
+- The primary role of the view function is to fetch the data from the client's request, apply a certain processing logic to it and send an appropriate response back to the client. 
+
+```python
+from django.shortcuts import render     
+
+def myview(request): 
+    if request.method=='GET': 
+        val = request.GET['key'] 
+        #perform read or delete operation on the model 
+    if request.method=='POST': 
+        val = request.POST['key'] 
+        #perform insert or update operation on the model 
+```
 
 ## Models
 
