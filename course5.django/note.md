@@ -61,6 +61,18 @@ def myview(request):
   - by raise exceptions
 
 ## Models
+- CRUD operation
+  - create, read, update, delete
+- django: get() and save()
+- model relationship
+- create model
+- migration
+  - syncing
+  - version control
+  - maintenance: elimintiong the need to write SQL queries directly.
+- python3 manage.py `makemigrations`/`migrate`
+
+
 
 ## Templates
 
