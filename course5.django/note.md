@@ -37,6 +37,29 @@ def myview(request):
         #perform insert or update operation on the model 
 ```
 
+- HTTP requests
+  - An HTTP request consists of a method (GET, POST, PUT, DELETE), a path to the resource, a version, and headers containing additional information.
+  - status codes
+    - informational: 100+
+    - Successful: 200+
+    - Redirection: 300+
+    - Client error: 400+
+    - Server error: 500+
+  - Role of https
+    - secure version of http, use encrption to protect data during transmission
+    - It ensures that sensitive information remains confidential and secure from unauthorized access.
+- Request and Response objects
+- URL
+  - Scheme/protocol
+  - domain name
+  - file path
+  - URL parameters
+- Mapping URLs with params
+- render()
+  - Combines a given template with a given context dictionary and return an HttpResponse object with that rendered text
+- Error handling
+  - by raise exceptions
+
 ## Models
 
 ## Templates
