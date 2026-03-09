@@ -61,6 +61,7 @@ def myview(request):
   - by raise exceptions
 
 ## Models
+### Model and migrate
 - CRUD operation
   - create, read, update, delete
 - django: get() and save()
@@ -71,6 +72,36 @@ def myview(request):
   - version control
   - maintenance: elimintiong the need to write SQL queries directly.
 - python3 manage.py `makemigrations`/`migrate`
+- Object relationship mapping
+
+### Models and forms
+- Django form
+- Form Elements and Structure
+  - HTML forms collect user data and send it to the server for processing.
+  - Django uses the Form class to define and process forms, with form fields as building blocks.
+- Types of Form Fields:
+  - CharField: Accepts string input, equivalent to text input in HTML.
+  - EmailField: Validates email format, equivalent to email input in HTML.
+  - IntegerField: Accepts only integers, equivalent to number input in HTML.
+  - MultipleChoiceField: Allows multiple options, similar to select elements in HTML.
+  - FileField: Enables file uploads, equivalent to file input in HTML.
+- Django fields
+  - model
+  - field properties
+    - primary_key, defaultt, unique, choices
+  - field type: 
+    - CharField, IntegerField, Float Field ...
+  - relationship field:
+    - ForeignKey
+    - on_delete: CASCADE, PROTECT, RESTRICT
+    - one-to-one, many-to-one, many-to-many
+- Form API
+
+### Admin
+- default permissions
+  - add, change, delete, view
+
+### DB configuratino
 
 
 
