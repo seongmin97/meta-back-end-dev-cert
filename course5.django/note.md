@@ -98,12 +98,19 @@ def myview(request):
 - Form API
 
 ### Admin
+- python3 manage.py createsuperuser
+  - login into admin panel
+  - manage users and permissions.
 - default permissions
   - add, change, delete, view
 
 ### DB configuratino
-
-
+- DB options
+  - SQLite: simple
+  - MySQL: scalabe
+- changes configurations in setting.py
 
 ## Templates
+
+
 
