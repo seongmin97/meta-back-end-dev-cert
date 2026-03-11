@@ -5,11 +5,11 @@ from django.http import HttpResponse
 def home(request):
     return HttpResponse("Welcome to Little Lemon!")
 
-def about(request):
-    return HttpResponse("About us")
+# def about(request):
+#     return HttpResponse("About us")
 
-def menu(request):
-    return HttpResponse("Menu")
+# def menu(request):
+#     return HttpResponse("Menu")
 
 def book(request):
     return HttpResponse("Make a booking")
@@ -33,3 +33,10 @@ def form_view(request):
             form.save()
     context = {"form" : form}
     return render(request, "booking.html", context)
+
+def menu(request):
+    return render(request, "menu.html")
+
+def about(request):
+    about_content = {'about': "Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist. The chefs draw inspiration from Italian, Greek, and Turkish culture and have a menu of 12–15 items that they rotate seasonally. The restaurant has a rustic and relaxed atmosphere with moderate prices, making it a popular place for a meal any time of the day."} 
+    return render(request, "about.html", about_content)

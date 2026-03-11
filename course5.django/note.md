@@ -106,11 +106,41 @@ def myview(request):
 
 ### DB configuratino
 - DB options
-  - SQLite: simple
   - MySQL: scalabe
 - changes configurations in setting.py
 
 ## Templates
+- Templates engine and language
+  - template inheritance
+```html
+String = 'Simple is better than complex' 
+is passed a context,
+{{ string | wordcount }} returns 5.
 
+nums = [1,2,3,4,5,6,7,8]
+Is passed in the context,
+{{ nums | slice[1:3] }}
+It returns [2,3] and then you can iterate over it.
+// The first and last filters return the first and last item in the list.
+```
+- Create template
+  - arguments need to be passed to render():
+  - Template path, request object, dictionary
 
+- a Django template is ​a Python string or text document marked
+- DTL: django template language
+  - variable
+  - tags
+    - if and for loop. 
+    - {% if loggedIn %} ... {% else %} ... {% endif %}
+    - {% for x in array %} ... {% endfor %}
+      - forloop.counter, forloop.revcounter, forloop.first, forloop.last.
+  - filters
+    - {{ string|upper }}
+    - {{ today_date | date:"Y-m-d" }}
+  - comments
+- Template Engine
+  - Modern web frameworks use a web template system to merge a data source with static HTML to generate dynamic web pages. 
 
+- Create dynamic template
+- Mapping model objeccts to a template
