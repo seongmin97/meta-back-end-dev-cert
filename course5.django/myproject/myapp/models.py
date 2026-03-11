@@ -25,3 +25,11 @@ class Employees(models.Model):
 
     def __str__(self):
         return f"{self.first_name} {self.last_name} - {self.role}"
+    
+class Menu(models.Model):
+    name = models.CharField(max_length=200)
+    price = models.IntegerField()
+    description = models.CharField(max_length=1000)
+
+    def __str__(self):
+        return self.name

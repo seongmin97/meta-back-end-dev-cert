@@ -11,7 +11,16 @@
  <h1 style="color: #495E57"> Our Menu </h1>
 
 <!-- Add paragraph code -->
+{% if menu %}
 
+{% for item in menu %}
+{{item.name}} : {{item.price}} <br>
+
+{% endfor %}
+
+{% else %}
+No items to display
+{% endif %}
 <!-- Add image code -->
 
 </body>
