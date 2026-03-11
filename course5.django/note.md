@@ -143,4 +143,14 @@ It returns [2,3] and then you can iterate over it.
   - Modern web frameworks use a web template system to merge a data source with static HTML to generate dynamic web pages. 
 
 - Create dynamic template
-- Mapping model objeccts to a template
+  -  Mapping model objeccts to a template
+
+- Template inheritance
+  - <% extends 'xxx.html' %>
+
+- Debugging
+  - DEBUG = True
+- Testing
+  - unit tests
+  - python3 manage.py test 
+  - class ReservationModelTest(TestCase)
