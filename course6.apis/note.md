@@ -78,7 +78,85 @@
   - failure to manage the app
 - Debugging
 
-## Django REST framework
+## Django REST framework (DRF)
+- What is DRF
+  - DRF is a toolkit built on top of Django, designed to streamline API development.
+  - Data convertion: serialization/deserialization.
+  - support authentication.
+- better api view with decorators
+  - rate limiting
+  - authentications
+- routing classes
+  - SimpleRouter
+```python
+class BookView(APIView):
+	def get(self, request, pk):
+    	return Response({"message":"single book with id " + str(pk)}, status.HTTP_200_OK)
+	def put(self, request, pk):
+    	return Response({"title":request.data.get('title')}, status.HTTP_200_OK)
+
+```
+
+```python
+# views.py
+Class BookView(viewsets.ViewSet):
+	def list(self, request):
+    	return Response({"message":"All books"}, status.HTTP_200_OK)
+	def create(self, request):
+    	return Response({"message":"Creating a book"}, status.HTTP_201_CREATED)
+	def update(self, request, pk=None):
+    	return Response({"message":"Updating a book"}, status.HTTP_200_OK)
+	def retrieve(self, request, pk=None):
+    	return Response({"message":"Displaying a book"}, status.HTTP_200_OK)
+	def partial_update(self, request, pk=None):
+        return Response({"message":"Partially updating a book"}, status.HTTP_200_OK)
+	def destroy(self, request, pk=None):
+    	return Response({"message":"Deleting a book"}, status.HTTP_200_OK)
+
+# urls.py
+urlpatterns = [
+	path('books', views.BookView.as_view(
+    	{
+        	'get': 'list',
+        	'post': 'create',
+    	})
+	),
+    path('books/<int:pk>',views.BookView.as_view(
+    	{
+        	'get': 'retrieve',
+        	'put': 'update',
+        	'patch': 'partial_update',
+        	'delete': 'destroy',
+    	})
+	)
+]
+```
+- Generic views and ViewSets in DRF
+  - ViewSets
+    - a collection of resources: list()/GET, create()/POST
+    - a single resource: retrive()/GET, update()/PUT, partial_update()/PATCH, destroy()/DELETE
+  - Generic Views 
+
+- Function and class-based views
+  - class-based 
+    - write less code
+    - less code duplication
+    - extend and add features
+    - methods for HTTP request types
+
+- Django debug toolbar
+
+- Serializers
+  - HyperlinkedRelatedField or HyperlinkedModelSerializer
+
+- Deserialization and validation
+  - serialized_item.is_valid(raise_exception=True)
+
+- Renders types
+  - TemplateHTMLRenderer
+    - template file
+  - StaticHTMLRenderer
+  - CSV and YAML Renders
 
 
 ## Advanced API development
