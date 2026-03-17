@@ -1,0 +1,25 @@
+Admin
+User: admin
+pw: littlelemon123
+auth: 6afcaa70ea6bd4f93b5f734acfb183056e8302a6
+
+User: user1
+pw: passwordll123
+email: user1@littlelemon.com
+auth: 4fe9140d3eed55a8e14c4e304f005dd234cc3123
+group: delivery crew
+
+User: manager1
+pw: passwordll123
+email: manager1@littlelemon.com
+auth: 81dbcc7e21a39b16002c1ad65e7e8c966b1ebac3
+
+User: user2
+pw: passwordll123
+email: user2@littlelemon.com
+auth: 749c730c8b0dd71a75ea3fc12358b6e456746d63
+
+User: user3
+pw: passwordll123
+email: user3@littlelemon.com
+auth: c4ed987106151c479f37e92b1a8dd5bbfc66f07f

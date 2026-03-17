@@ -1,0 +1,64 @@
+1.	The admin can assign users to the manager group
+Done, via django admin dashboard
+
+2.	You can access the manager group with an admin token
+Done if this means that admin has manager permission group
+
+3.	The admin can add menu items 
+Done, by assigning admin to manager group
+
+4.	The admin can add categories
+Done, by assigning admin to manager group
+
+5.	Managers can log in 
+Done, by creating users
+
+6.	Managers can update the item of the day
+Done
+
+7.	Managers can assign users to the delivery crew
+Done
+
+8.	Managers can assign orders to the delivery crew
+Done
+
+9.	The delivery crew can access orders assigned to them
+Done
+
+10.	The delivery crew can update an order as delivered
+Done
+
+11.	Customers can register
+Done 
+
+12.	Customers can log in using their username and password and get access tokens
+Done
+
+13.	Customers can browse all categories 
+Done 
+
+14.	Customers can browse all the menu items at once
+Done
+
+15.	Customers can browse menu items by category
+Done
+
+16.	Customers can paginate menu items
+Done
+
+17.	Customers can sort menu items by price
+Done
+
+18.	Customers can add menu items to the cart
+Done
+
+19.	Customers can access previously added items in the cart
+
+20.	Customers can place orders
+Done
+
+21.	Customers can browse their own orders
+Done
+
+Things to check: 
+Where can users login from with all the user pw created? 
