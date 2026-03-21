@@ -102,5 +102,44 @@ console.log(petCat, "now says", catSound)
 
 
 ## The full stack using Django
+- Configure Django to connect mysql
+```sql
+-- create new user
+CREATE USER 'coursera'@'localhost' IDENTIFIED BY 'coursera';
+
+create database menu_items;
+
+GRANT ALL PRIVILEGES ON menu_items.* TO 'coursera'@'localhost';
+
+FLUSH PRIVILEGES;
+exit;
+```
+- Form and model forms
+- Fetching data with js
+- Querying APIs using JavaScript
+```JavaScript
+// e.g. POST method
+const payload = {
+    "title": "Ambrosia Ice cream",
+    "price": 5.00,
+    "inventory": 100
+}
+const endpoint = 'http://127.0.0.1:8000/api/menu-items'
+fetch(endpoint,
+    {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data)
+    })
+
+
+```
 
 ## Production env
