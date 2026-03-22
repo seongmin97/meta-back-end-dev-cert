@@ -143,3 +143,56 @@ fetch(endpoint,
 ```
 
 ## Production env
+- Server and serverless
+  - CI/CD
+    - Continuous Integration (CI) ensures code quality by testing in a development environment, 
+    - Continuous Deployment (CD) automates the upload process after successful tests.
+  - Hosting approaches
+    - server approach, Involves dedicated and virtual servers. 
+    - serverless approach, Simplifies deployment by automating server management and resource allocation.
+- Virtual machines and containerization
+  - type1 hypervisor, bare-metal. 
+    - faster
+    - KVM
+  - type2 hypervisor
+    - on top of OS, slower
+    - oracle virtual box
+  - Hypervisors mostly abstract the hardware or works on top of a host operating system, and you still need to install an operating system.
+  - containers don’t need to worry about the operating system at all. The container engine abstracts the operating system for the containers and run them properly. 
+- self-hosted, IaaS, PaaS, SaaS, DBaaS
+  - infrastructure as a service,
+  - platform ...
+  - software ...
+- Cloud computing
+  - types
+    - public cloud
+    - private cloud
+    - hybrid cloud
+  - benefits
+    - On-demand access to powerful computing resources without the need for physical hardware.
+    - Cost savings by paying only for what is used, avoiding idle resources.
+    - Scalability and flexibility to adjust resources based on demand.
+- key elements of cloud computing.
+  - computing unit
+    - Public cloud providers offer virtual machines known as computing units for on-demand deployment
+    - These units can be resized based on needs, allowing users to upgrade or downgrade resources
+  - storage solutions
+  - database and machine learning
+- network
+  - ip
+  - dns
+- Scalability : ability to resize production infrastructure 
+  - Vertical
+  - Horizontal
+  - auto-scaling
+    - Some cloud providers offer auto-scaling solutions that automatically adjust resources based on current demand
+- load balancing
+  - Load balancers distribute incoming requests across multiple web servers to manage traffic efficientl
+    - Round-robin distributes requests equally
+    - health-based balancing monitors server load and directs traffic only to available servers
+  - static file handling
+    - A reverse proxy can serve static files (HTML, CSS, JS) directly,
+    - Offloading static files to a CDN
+  - database scaling
+    - like sharding and master slave replication. 
+
